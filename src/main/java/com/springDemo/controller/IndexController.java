@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-	@RequestMapping("/hello")
+	@RequestMapping("/product")
 	public String hello(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("Here");
 		/*ModelAndView mv=new ModelAndView();
 		mv.setViewName("hello-world");*/
-		return "hello-world.jsp";
+		return "productIndex";
 	}
 }
